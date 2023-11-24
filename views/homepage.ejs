@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File uploads</title>
+  </head>
+  <body>
+    <!-- <form action="/upload" method="POST" enctype="multipart/form-data">
+
+        <input type="file" name="profileImage"/>
+        <button type="submit">Submit</button>
+    </form> -->
+
+    <form
+      action="/college/addonecollegelist"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <input
+        type="file"
+        name="profileImage"
+        accept="image/x-png,image/gif,image/jpeg"
+      />
+      <input type="text" name="CollegeName" required />
+      <input type="text" name="FullForm" required />
+      <input type="text" name="placeName" required />
+      <input type="text" name="ApprovalOrg" />
+      <input type="number" name="Admissions" />
+      <input type="text" name="Placements" />
+      <input type="text" name="CourseName" />
+      <input type="number" name="Fees" />
+      <input type="number" name="Rating" />
+      <input type="text" name="Brochure" />
+      <input type="text" name="Enquire" />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
